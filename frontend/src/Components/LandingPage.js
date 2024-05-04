@@ -1,3 +1,4 @@
+import '../App.css';
 import React from 'react';
 
 function LandingPage() {
@@ -7,9 +8,6 @@ function LandingPage() {
       <p className="text-xl text-gray-700 text-center px-16">
         This is a landing page built with React and Tailwind CSS. Feel free to customize it for your needs.
       </p>
-      <a href="#" className="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-md mt-4 hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-        Learn More
-      </a>
     </div>
   );
 }
