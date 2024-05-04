@@ -1,5 +1,5 @@
 import LandingPage from './Components/LandingPage';
-import { FileInput } from 'flowbite-react';
+import FileInput from './Components/FileInput';
 import './App.css';
 
 function App() {
