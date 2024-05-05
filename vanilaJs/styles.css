@@ -1,7 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F1;
+    background: #FBF7F1;
+}
 body {
     font-family: sans-serif;
     margin: 20px;
-    background-color: #FBC046;
+    background-color: #FBF7F1;
     
   }
   
@@ -187,9 +194,17 @@ body {
     background-color: #45a049;
   }
 
-  #breakdown-form{
+  .formContainer{
+    padding: 30px;
+    border: 2px solid black;
     width: 50vw;
     margin: auto;
+    border-radius: 10px;
+  }
+
+  .formItem{
+    margin: 5px;
+    padding: 5px;
   }
   
   #breakdown-container {
@@ -224,3 +239,8 @@ body {
     transition: width 0.3s ease-in-out;
   }
   
+  .heroImageContainer{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 5;    
+  }
