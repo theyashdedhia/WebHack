@@ -1,3 +1,10 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
+from api.views import UploadViewSet
 
-urlpatterns = []
+router = routers.DefaultRouter()
+router.register('upload-assignment', UploadViewSet, basename="upload-assignment")
+
+urlpatterns = [
+    path('', include(router.urls)),
+]

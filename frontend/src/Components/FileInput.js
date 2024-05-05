@@ -23,10 +23,18 @@ function Component() {
     }
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/upload', {
+      const response = await fetch('http://127.0.0.1:8000/backend/upload-assignment/', {
         method: 'POST',
+        mode: 'cors',
+        referrerPolicy: 'no-referrer',
         body: formData,
+        redirect: 'follow',
+        cache: 'no-cache',
+        headers: {
+          'Access-Control-Allow-Origin': '*'
+        }
       });
+      console.log(response)
 
       if (!response.ok) {
         throw new Error('Upload failed');
