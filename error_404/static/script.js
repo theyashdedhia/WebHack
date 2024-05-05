@@ -1,15 +1,16 @@
 const form = document.getElementById('breakdown-form');
 const breakdownContainer = document.getElementById('breakdown-container');
-let checkedItems = []; 
+let checkedItems = []; // Track checked checkboxes
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault(); 
+  event.preventDefault(); // Prevent default form submission
 
   const assignmentName = document.getElementById('assignment-name').value;
   const dueDate = document.getElementById('due-date').value;
-  const pdfFile = document.getElementById('pdf-file').files[0];
+  const pdfFile = document.getElementById('pdf-file').files[0]; // Assuming single file
 
-  const simulatedBreakdown = [ 
+  // Simulate API call (replace with actual fetch request)
+  const simulatedBreakdown = [ // Sample breakdown data
     'Step 1: Read the assignment instructions carefully.',
     'Step 2: Gather all necessary materials and resources.',
     'Step 3: Break down the assignment into smaller tasks.',
@@ -18,11 +19,12 @@ form.addEventListener('submit', (event) => {
     'Step 6: Submit your assignment on time.',
   ];
 
+  // Update UI with breakdown data
   updateBreakdown(simulatedBreakdown);
 });
 
 function updateBreakdown(breakdownData) {
-  breakdownContainer.innerHTML = ''; 
+  breakdownContainer.innerHTML = ''; // Clear existing content
 
   const breakdownList = document.createElement('ul');
   breakdownData.forEach((step, index) => {
@@ -31,7 +33,7 @@ function updateBreakdown(breakdownData) {
     checkbox.type = 'checkbox';
     checkbox.id = `step-${index}`;
     checkbox.value = step;
-    checkbox.addEventListener('change', handleCheckboxChange);
+    checkbox.addEventListener('change', handleCheckboxChange); // Handle checkbox changes
 
     const label = document.createElement('label');
     label.htmlFor = `step-${index}`;
@@ -51,7 +53,7 @@ function updateBreakdown(breakdownData) {
   breakdownContainer.appendChild(breakdownList);
   breakdownContainer.appendChild(progressBar);
 
-  updateProgress();
+  updateProgress(); // Update progress bar initially
 }
 
 function handleCheckboxChange(event) {

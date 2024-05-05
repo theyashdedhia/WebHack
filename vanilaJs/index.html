@@ -7,40 +7,38 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <section class="hero">
-          <h2>Planner</h2>
-          <p>Invest Time Appropriately</p>
-        </section>
-    
-        <section class="features">
-          <ul>
-            <li>Feature 1: Benefit for the user</li>
-            <li>Feature 2: Benefit for the user</li>
-            <li>Feature 3: Benefit for the user</li>
-          </ul>
-        </section>
-    
-        <section class="cta">
-          <a href="#breakdown-form" class="cta-button">Plan Now</a>
-        </section>
-    </main>
-    <form id="breakdown-form">
-        <h3>Submit your assignment</h3>
-        <div>
-        <label for="assignment-name">Assignment Name:</label>
-        <input type="text" id="assignment-name" name="assignmentName" >
+    <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Landing\ Page.png'); background-size: cover;">
+    </div>
+    <div>
+        <div class="formContainer">
+            <form id="breakdown-form" style="background-color: #FBF7F1;">
+                <h3 class="formItem">Submit your assignment</h3>
+                <div class="formItem">
+                <label for="assignment-name">Assignment Name:</label>
+                <input type="text" id="assignment-name" name="assignmentName" >
+                </div>
+                <div class="formItem">
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="dueDate" >
+                </div>
+                <div class="formItem">
+                <label for="pdf-file">Upload PDF:</label>
+                <input type="file" id="pdf-file" name="pdfFile" accept=".pdf" >
+                </div>
+                <button type="submit" class="formItem">Get Step-by-Step Breakdown</button>
+            </form>
         </div>
-        <div>
-        <label for="due-date">Due Date:</label>
-        <input type="date" id="due-date" name="dueDate" >
-        </div>
-        <div>
-        <label for="pdf-file">Upload PDF:</label>
-        <input type="file" id="pdf-file" name="pdfFile" accept=".pdf" >
-        </div>
-        <button type="submit">Get Step-by-Step Breakdown</button>
-  </form>
+    </div>
+    <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Features.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+    </div>
+    <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Sarah.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+    </div>
+    <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Sarah\ with\ planner.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+    </div>
+    <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Sarah\ Sub\ Tasks.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+    </div>
+    <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/About\ Team.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+    </div>
   <div id="breakdown-container"></div>
   <script src="script.js"></script>
 </body>

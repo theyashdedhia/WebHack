@@ -25,13 +25,11 @@ function Component() {
     try {
       const response = await fetch('http://127.0.0.1:8000/backend/upload-assignment/', {
         method: 'POST',
-        mode: 'cors',
-        referrerPolicy: 'no-referrer',
+        mode: 'no-cors',
         body: formData,
-        redirect: 'follow',
         cache: 'no-cache',
         headers: {
-          'Access-Control-Allow-Origin': '*'
+          'Content-Type': 'application/json'
         }
       });
       console.log(response)
