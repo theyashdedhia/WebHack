@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap">
+</head>
+
+<body class="planner-body" >
+    <header class="planner-header">
+        <img src="images/Planner logo.png" alt="Planner" width="70" height="70">
+        <h2>Assignment Planner</h2>
+    </header>
+    <div class="planner-results-section">
+        <div class="planner-results">
+            <h1>Planner Results</h1>
+        </div>
+
+        <div class="task-section">
+            <div class="task">
+                <div class="task-actions">
+                    <button class="edit-button" title="Edit Task">
+                        <img src="images/edit.png" alt="Edit" class="action-img" loading="lazy" />
+                    </button>
+                    <button class="cancel-button" title="Cancel Task">
+                        <img src="images/cancel.png" alt="Cancel" class="action-img" loading="lazy" />
+                    </button>
+                </div>
+                <div class="task-details">
+                    <span class="task-title"><strong>Task 1:</strong> Design and implement a clear and user-friendly menu layout for ordering.</span>
+                    <div class="task-estimated-time"><strong>Estimated time:</strong> 2h</div>
+                    <div class="task-deadline"><strong>Deadline:</strong> 10th May, 2024</div>
+                    <br>
+                    <div class="task-description">
+                        <strong>Description:</strong> Here
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="integration-section">
+            <button class="integration-button jira-link">
+                <img src="images/Jira.png" alt="JIRA" loading="lazy" class="jira-img" />
+                <span class="jira-link-text">Add to JIRA</span>
+            </button>
+            <button class="integration-button calendar-link">
+                <img src="images/Microsoft Calendar.png" alt="Calendar" loading="lazy" class="continue-img" />
+                <span class="continue-text">Add to Calendar</span>
+            </button>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

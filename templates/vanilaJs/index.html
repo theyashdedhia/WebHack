@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step Breakdown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Landing\ Page.png'); background-size: cover;">
+    </div>
+    <div style="background-color: #FBF7F1; background: #FBF7F1;">
+        <div class="formContainer" style="background-color: #FBF7F1; background: #FBF7F1;">
+            <form id="breakdown-form" style="background-color: #FBF7F1;">
+                <h3 class="formItem">Submit your assignment</h3>
+                <div class="formItem">
+                <label for="assignment-name">Assignment Name:</label>
+                <input type="text" id="assignment-name" name="assignmentName" >
+                </div>
+                <div class="formItem">
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="dueDate" >
+                </div>
+                <div class="formItem">
+                <label for="pdf-file">Upload PDF:</label>
+                <input type="file" id="pdf-file" name="pdfFile" accept=".pdf" >
+                </div>
+                <button type="submit" class="formItem">Get Step-by-Step Breakdown</button>
+            </form>
+        </div>
+    </div>
+    <div style="background-color: #FBF7F1; background: #FBF7F1;">
+        <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Features.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+        </div>
+        <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Sarah.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+        </div>
+        <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Sarah\ with\ planner.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+        </div>
+        <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/Sarah\ Sub\ Tasks.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+        </div>
+        <div class="heroImageContainer" style="background-image: url('/vanilaJs/Images/About\ Team.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+        </div>
+    </div>
+  <div id="breakdown-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
